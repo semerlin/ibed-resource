@@ -1,0 +1,31 @@
+#!/bin/sh
+
+IFACE=$1
+IPADDR=$2
+NETMASK=$3
+GATEWAY=$4
+
+if [ ! -x /sbin/ifconfig ]
+then
+    exit 0
+fi
+
+if [ ! -x /sbin/route ]
+then
+	exit 0
+fi
+
+echo "shutting down $IFACE"
+ifconfig $IFACE down
+
+echo "Setting up networking on loopback device: "
+ifconfig lo 127.0.0.1
+route add -net 127.0.0.0 netmask 255.0.0.0 lo
+
+echo "Setuping the $IFACE: $IPADDR $NETMASK $GATEWAY"
+ifconfig $IFACE $IPADDR netmask $NETMASK
+route add default gw $GATEWAY
+
+echo "restart network"
+ifconfig $IFACE up
+
