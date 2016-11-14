@@ -1,0 +1,13 @@
+[General]
+name=eth0
+ip=192.168.0.167
+netmask=255.255.255.0
+gateway=192.168.0.1
+
+[Default]
+address=192.168.0.155
+port=9000
+
+[Monitor]
+address=192.168.0.150
+port=9000

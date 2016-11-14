@@ -1,0 +1,21 @@
+/* launch widget */
+QWidget#lanchFrame{
+	background-image: url(:/launch/launch.png);
+}
+
+QLabel#label_message{
+	/*font-family: "Arial";*/
+	font-family: "Hiragino Sans GB";
+	/*font-family: "A-OTF Kaisho MCBK1 Pro";*/
+	font-size: 15px;
+	color: rgb(255, 255, 255);
+}
+
+QProgressBar#progressBar_launch{
+	max-height: 4px;
+	border: 3px solid white;
+}
+
+QProgressBar#progressBar_launch::chunk{
+	background-color: rgb(112, 171, 0);
+}

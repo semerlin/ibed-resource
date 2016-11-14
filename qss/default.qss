@@ -1,0 +1,710 @@
+/* all controls and widget*/
+*{
+	font-family: "冬青黑體簡體中文";
+	/*font-family: "Hiragino Sans GB";*/
+	outline: none;
+}
+
+QPushButton{
+	border: 0px solid white;
+}
+
+
+/* Input Method*/
+QFrame#frameNumIPMethod{
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+			stop: 0 rgb(255, 255, 255), stop: 1 rgb(122, 169, 219));
+}
+
+QFrame#frameNumIPMethod QPushButton{
+	font-size: 22px;
+	color: white;
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+			stop: 0 rgb(145, 187, 215), stop: 1 rgb(19, 107, 163));
+	border: 1px solid rgb(192, 212, 225);
+}
+
+QFrame#frameNumIPMethod QPushButton:pressed{
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+			stop: 0 rgb(14, 46, 93), stop: 1 rgb(52, 145, 209));
+}
+
+/* TopWidget */
+QWidget#widgetTop{
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+			stop: 0 rgb(14, 46, 93), stop: 1 rgb(52, 145, 209));
+}
+
+IconButtonBox#widgetTop QPushButton{
+	font-size: 16px;
+	color: rgb(159, 160, 160);
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+			stop: 0 rgb(14, 46, 93), stop: 1 rgb(52, 145, 209));
+}
+
+IconButtonBox#widgetTop QPushButton[highlight=true]{
+	font-size: 16px;
+	border-top: 0px solid white;
+	border-left: 0px solid white;
+	border-right: 0px solid white;
+	border-bottom: 3px solid white;
+	color: white;
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+			stop: 0 rgb(14, 46, 93), stop: 1 rgb(52, 145, 209));
+}
+
+/* BottomWidget */
+QWidget#widgetBottom{
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+			stop: 0 rgb(255, 255, 255), stop: 1 rgb(122, 169, 219));
+}
+
+IconButtonBox#widgetBottom QPushButton{
+	font-size: 20px;
+	color: rgb(36, 59, 87);
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+			stop: 0 rgb(255, 255, 255), stop: 1 rgb(122, 169, 219));
+}
+
+IconButtonBox#widgetBottom QPushButton[highlight=true]{
+	font-size: 20px;
+	border-top: 0px solid white;
+	border-left: 0px solid white;
+	border-right: 0px solid white;
+	border-bottom: 0px solid white;
+	color: white;
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+			stop: 0 rgb(45, 144, 215), stop: 1 rgb(141, 202, 243));
+}
+
+/* middle widget*/
+QWidget#widgetMiddle{
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+			stop: 0 rgb(22, 28, 64), stop: 1 rgb(110, 171, 231));
+}
+
+
+/* BaseInfoWidget */
+BaseInfoWidget QLabel{
+	color: white;
+}
+
+BedNumWidget{
+	background-color: rgb(181, 181, 182);
+}
+
+BedNumWidget QLabel#labelBed{
+	color: white;
+	font-size: 25px;
+}
+
+BedNumWidget QLabel#labelBedNum{
+	color: white;
+	font-size: 50px;
+}
+
+BaseInfoWidget QLabel#labelName{
+	font-size: 42px;
+}
+
+BaseInfoWidget QLabel#labelSex, QLabel#labelAge, QLabel#labelLevel{
+	font-size: 31px;
+}
+
+QLabel#labelLevel{
+	color: gray;
+	background-color: white;
+}
+
+PatientInfoWidget#widgetTime{
+	background-color: rgb(125, 189, 93);
+}
+
+PatientInfoWidget#widgetEat{
+	background-color: rgb(67, 157, 209);
+}
+
+PatientInfoWidget#widgetDoctor{
+	background-color: rgb(230, 151, 32);
+}
+
+PatientInfoWidget#widgetNurse{
+	background-color: rgb(225, 126, 170);
+}
+
+PatientInfoWidget QLabel#labelData{
+	font-size: 25px;
+}
+
+PatientInfoWidget QLabel#labelInfo{
+	font-size: 13px;
+}
+
+PatientAdviseWidget#widgetAdvise{
+	background-color: rgb(164, 202, 80);
+}
+
+PatientAdviseWidget#widgetAllergy{
+	background-color: rgb(235, 120, 33);
+}
+
+PatientAdviseWidget QTextEdit{
+	font-size: 19px;
+	color: white;
+	border: 0px solid white;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+PatientAdviseWidget QLabel#labelInfo{
+	font-size: 20px;
+}
+
+/* AdviseWidget*/
+AdviseWidget QPushButton{
+	font-size: 16px;
+	color: rgb(159, 160, 160);
+}
+
+AdviseWidget IconPushButton[highlight=true]{
+	color: white;
+}
+
+QWidget#widgetTabBar{
+	border-top: 1px solid rgb(107, 107, 107);
+	border-left: 1px solid rgb(107, 107, 107);
+	border-right: 1px solid rgb(107, 107, 107);
+	border-bottom: 0px solid rgb(107, 107, 107);
+	min-height: 40px;
+	max-height: 40px;
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+			stop: 0 rgb(63, 171, 243), stop: 1 rgb(10, 129, 215));
+}
+
+IconButtonBox#widgetTabBar QPushButton{
+	font-size: 16px;
+	color: rgb(18, 81, 137);
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+			stop: 0 rgb(63, 171, 243), stop: 1 rgb(10, 129, 215));
+}
+
+IconButtonBox#widgetTabBar QPushButton[highlight=true]{
+	font-size: 16px;
+	color: white;
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+			stop: 0 rgb(141, 202, 243), stop: 1 rgb(44, 144, 215));
+}
+
+
+QTableView#tempAdvise, QTableView#longAdvise{
+	border-top: 0px solid rgb(107, 107, 107);
+	border-left: 1px solid rgb(107, 107, 107);
+	border-right: 1px solid rgb(107, 107, 107);
+	border-bottom: 1px solid rgb(107, 107, 107);
+	gridline-color: rgb(178, 178, 178);
+	background-color: white;
+	alternate-background-color: rgb(238, 238, 238);
+	selection-background-color: rgb(100, 181, 237);
+	selection-color: white;
+}
+
+
+QTableView#tempAdvise QHeaderView::section{
+	color: white;
+	font-size: 12px;
+	min-height: 28px;
+	background-color: rgb(0, 96, 169);
+	border-top: 0px solid rgb(178, 178, 178);
+	border-left: 0px solid rgb(178, 178, 178);
+	border-right: 1px solid rgb(178, 178, 178);
+	border-bottom: 0px solid rgb(178, 178, 178);
+}
+
+QTableView#longAdvise QHeaderView::section{
+	color: white;
+	font-size: 12px;
+	min-height: 28px;
+	background-color: rgb(0, 96, 169);
+	border-top: 0px solid rgb(178, 178, 178);
+	border-left: 0px solid rgb(178, 178, 178);
+	border-right: 1px solid rgb(178, 178, 178);
+	border-bottom: 0px solid rgb(178, 178, 178);
+}
+
+/* vertical scrollbar */
+QTableView QScrollBar:vertical{
+	background: rgb(175, 175, 175);
+	width: 5px;
+	margin: 0px 0 0px 0;
+}
+
+QTableView QScrollBar::handle:vertical{
+	border-radius: 2px;
+	background: rgb(66, 66, 66);
+	min-height: 20px;
+	margin: 1px; 
+}
+
+QTableView QScrollBar::add-line:vertical{
+	height: 0px;
+}
+
+QTableView QScrollBar::sub-line:vertical{
+	height: 0px;
+}
+  
+QtableView QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical{
+	background: none;
+}
+
+QTableView QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background: none;
+}
+
+/**/
+QTableView QScrollBar:horizontal{
+	background: rgb(175, 175, 175);
+	height: 5px;
+	margin: 0px 0 0px 0;
+}
+
+QTableView QScrollBar::handle:horizontal{
+	border-radius: 2px;
+	background: rgb(66, 66, 66);
+	min-width: 20px;
+	margin: 1px; 
+}
+
+QTableView QScrollBar::add-line:horizontal{
+	width: 0px;
+}
+
+QTableView QScrollBar::sub-line:horizontal{
+	width: 0px;
+}
+  
+QtableView QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal{
+	background: none;
+}
+
+QTableView QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+	background: none;
+}
+
+
+/* inoutwidget */
+InOutWidget QPushButton{
+	font-size: 16px;
+	color: rgb(159, 160, 160);
+}
+
+InOutWidget IconPushButton[highlight=true]{
+	color: white;
+}
+
+InOutWidget QLabel#labelIn{
+	min-height: 34px;
+	font-size: 16px;
+	color: white;
+	background-color: rgb(0, 96, 169);
+	border: 1px solid rgb(127, 127, 127);
+	border-bottom: 0px solid rgb(127, 127, 127);
+}
+
+InOutWidget QLabel#labelOut{
+	min-height: 34px;
+	font-size: 16px;
+	color: white;
+	background-color: rgb(0, 96, 169);
+	border: 1px solid rgb(127, 127, 127);
+	border-bottom: 0px solid rgb(127, 127, 127);
+}
+
+EditLabelListView#listViewOut, EditLabelListView#listViewIn{
+	border-top: 0px solid rgb(107, 107, 107);
+	border-left: 1px solid rgb(107, 107, 107);
+	border-right: 1px solid rgb(107, 107, 107);
+	border-bottom: 1px solid rgb(107, 107, 107);
+	background-color: white;
+	alternate-background-color: rgb(238, 238, 238);
+}
+
+EditLabelListView QLineEdit{
+	border-top: 2px solid rgb(0, 96, 169);
+	border-left: 2px solid rgb(0, 96, 169);
+	border-right: 2px solid rgb(0, 96, 169);
+	border-bottom: 2px solid rgb(0, 96, 169);
+}
+
+MusicPlayListView{
+	border-top: 1px solid rgb(107, 107, 107);
+	border-left: 1px solid rgb(107, 107, 107);
+	border-right: 1px solid rgb(107, 107, 107);
+	border-bottom: 1px solid rgb(107, 107, 107);
+	background-color: white;
+	alternate-background-color: rgb(238, 238, 238);
+}
+
+SettingWidget QPushButton{
+	font-size: 16px;
+	color: rgb(159, 160, 160);
+}
+
+SettingWidget IconPushButton[highlight=true]{
+	color: white;
+}
+
+
+LabelLineEdit{
+	min-height: 15px;
+	max-height: 15px;
+}
+
+LabelLineEdit QLabel{
+	font-size: 12px;
+	color: white;
+}
+
+LabelLineEdit QLineEdit{
+	border: 1px solid rgb(186, 186, 186);
+}
+
+LocalEthWidget{
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+			stop: 0 rgb(63, 171, 243), stop: 1 rgb(10, 129, 215));
+}
+
+LocalEthWidget > QLabel#labelName{
+	color: white;
+	font-size: 16px;
+}
+
+
+
+ServerEthWidget{
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+			stop: 0 rgb(63, 171, 243), stop: 1 rgb(10, 129, 215));
+}
+
+
+ServerEthWidget > QLabel#labelName{
+	color: white;
+	font-size: 16px;
+}
+
+ServerEthWidget > QLabel#labelStatus{
+	font-size: 14px;
+	color: white;
+}
+
+ScreenWidget{
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+			stop: 0 rgb(63, 171, 243), stop: 1 rgb(10, 129, 215));
+}
+
+ScreenWidget > QLabel#labelName{
+	color: white;
+	font-size: 16px;
+}
+
+LabelSlider QLabel{
+	font-size: 12px;
+	color: white;
+}
+
+
+LabelSlider QSlider::groove:horizontal{
+	height: 5px;
+	border: 1px solid rgb(164, 200, 172);
+	background-color: rgb(112, 171, 0);
+}
+  
+LabelSlider QSlider::add-page:horizontal{
+	background-color: rgb(230, 230, 230);
+	border: 1px solid rgb(164, 200, 172);
+}
+
+LabelSlider QSlider::handle:horizontal{
+    background-color: white;
+    width: 15px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    border-radius: 7px;
+}
+
+
+SoundWidget{
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+			stop: 0 rgb(63, 171, 243), stop: 1 rgb(10, 129, 215));
+}
+
+SoundWidget > QLabel#labelName{
+	color: white;
+	font-size: 16px;
+}
+
+/* infusion widget */
+QWidget#widgetLeft, QWidget#widgetSpeed{
+	min-width: 230px;
+	max-width: 230px;
+	min-height: 230px;
+	max-height: 230px;
+	border-radius: 115px;
+	background-color: rgb(21, 53, 103);
+}
+
+CircleProgressBar#progressBarLeft{
+	qproperty-active: rgb(234, 210, 36);
+	qproperty-background: rgb(91, 103, 129);
+	qproperty-circleHeight: 6;
+	qproperty-startAngle: 0;
+	qproperty-innerRadius: 72;
+	qproperty-fontSize: 61;
+	qproperty-fontFamily: "冬青黑體簡體中文";
+}
+
+CircleProgressBar#progressBarSpeed{
+	qproperty-active: rgb(255, 0, 0);
+	qproperty-background: rgba(0, 0, 0, 0);
+	qproperty-circleHeight: 22;
+	qproperty-dashWidth: 3;
+	qproperty-intervalAngle: 5;
+	qproperty-startAngle: 0;
+	qproperty-innerRadius: 70;
+	qproperty-fontSize: 61;
+	qproperty-fontFamily: "冬青黑體簡體中文";
+	qproperty-startColor: rgb(0, 85, 255);
+	qproperty-stopColor: rgb(255, 0, 0);
+}
+
+InfusionWidget QLabel{
+	font-size: 20px;
+	color: white;
+}
+
+InfusionWidget QPushButton{
+	font-size: 20px;
+	color: white;
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+			stop: 0 rgb(149, 184, 214), stop: 1 rgb(66, 143, 195));
+	border: 1px solid white;
+	border-radius: 5px;
+	min-height: 45px;
+	min-width: 145px;
+}
+
+InfusionWidget QPushButton:!enabled{
+	font-size: 20px;
+	color: black;
+	background-color: rgb(101, 134, 177);
+	border: 1px solid rgb(45, 73, 121);
+	border-radius: 5px;
+	min-height: 45px;
+	min-width: 145px;
+}
+
+InfusionWidget QPushButton:pressed{
+	font-size: 20px;
+	color: white;
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+			stop: 0 rgb(14, 46, 93), stop: 1 rgb(52, 145, 209));
+	border: 1px solid white;
+	border-radius: 5px;
+	min-height: 45px;
+	min-width: 145px;
+}
+
+
+InfusionWidget QComboBox{
+	font-size: 20px;
+	border: 1px solid rgb(45, 73, 121);
+	border-radius: 5px;
+	padding: 1px 18px 1px 3px;
+	min-height: 30px;
+	background-color: rgb(101, 134, 177);
+}
+
+InfusionWidget QComboBox:on{ /* shift the text when the popup opens */
+	padding-top: 3px;
+	padding-left: 4px;
+}
+
+InfusionWidget QComboBox::drop-down{
+	subcontrol-origin: padding;
+	subcontrol-position: top right;
+	width: 25px;
+	border-left-width: 1px;
+	border-left-color: rgb(45, 73, 121);
+	border-left-style: solid; /* just a single line */
+	border-top-right-radius: 5px; /* same radius as the QComboBox */
+	border-bottom-right-radius: 5px;
+}
+
+InfusionWidget QComboBox::down-arrow{
+	image: url(:/res/arrow.png);
+}
+
+InfusionWidget QComboBox QAbstractItemView{
+	border: 1px solid rgb(45, 73, 121);
+	selection-background-color: lightgray;
+	background-color: rgb(101, 134, 177);
+}
+
+InfusionWidget QComboBox::down-arrow:on{ /* shift the arrow when popup is open */
+	top: 1px;
+	left: 1px;
+}
+
+/* bed control widget */
+QWidget#widgetControl{
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+			stop: 0 rgb(23, 29, 97), stop: 1 rgb(63, 94, 151));
+}
+
+BedWidget QWidget#widgetWeight{
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+			stop: 0 rgb(23, 29, 97), stop: 1 rgb(63, 94, 151));
+}
+
+
+BedWidget QPushButton{
+	min-height: 72px;
+	max-height: 72px;
+	min-width: 72px;
+	max-width: 72px;
+}
+
+QWidget#widgetControl1{
+	border: 2px solid rgb(168, 179, 197);
+}
+
+BedWidget QLabel#labelWeightName{
+	color: white;
+	font-size: 20px;
+}
+
+BedWidget QLabel#labelWeight{
+	color: white;
+	font-size: 41px;
+}
+
+/* StandbyWidget */
+StandbyWidget{
+	background-image: url(":/res/images/standby.png")
+}
+
+StandbyWidget QLabel#labelName{
+	font-size: 60px;
+	color: white;
+}
+
+DotLabel QLabel#labelDot{
+	min-height: 16px;
+	max-height: 16px;
+	min-width: 16px;
+	min-height: 16px;
+	border-radius: 8px;
+	background-color: white;
+}
+
+DotLabel QLabel#labelValue{
+	font-size: 20px;
+	color: white;
+}
+
+StandbyWidget PixmapLabel{
+	min-height: 195px;
+	min-width: 120px;
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+			stop: 0 rgb(9, 129, 215), stop: 1 rgb(63, 171, 243));
+	border: 1px solid rgb(74, 179, 227);
+}
+
+StandbyWidget PixmapLabel QLabel{
+	font-weight: bold;
+	font-size: 36px;
+	color: white;
+}
+
+/* CallWidget */
+CallWidget{
+	border-radius: 5px;
+	background-image: url(":/res/images/call.png");
+}
+
+CallWidget QLabel#labelStep{
+	font-size: 34px;
+	color: white;
+}
+
+CallWidget QLabel#labelTime{
+	font-size: 20px;
+	color: white;
+}
+
+CallWidget QPushButton{
+	min-height: 40px;
+	max-height: 40px;
+	min-width: 40px;
+	max-width: 40px;
+	border-radius: 20px;
+}
+
+CallWidget QPushButton#pushButtonCancel{
+	background-image: url(":/res/images/cancel.png");
+}
+
+CallWidget QPushButton#pushButtonAnswer{
+	background-image: url(":/res/images/answer.png");
+}
+
+/* ProgressDialog */
+ProgressDialog{
+	background-image: url(":/res/images/progressbk.png");
+}
+
+ProgressDialog QPushButton{
+	font-size: 24px;
+	color: white;
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+			stop: 0 rgb(145, 187, 215), stop: 1 rgb(19, 107, 163));
+	border: 1px solid rgb(192, 212, 225);
+	min-width: 140px;
+	min-height: 36px;
+}
+
+ProgressDialog QPushButton:pressed{
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+			stop: 0 rgb(14, 46, 93), stop: 1 rgb(52, 145, 209));
+}
+
+ProgressDialog QFrame#frameProgress{
+	border: 0px solid white;
+	background-image: url(":/res/images/progress.png");
+}
+
+ProgressDialog CircleProgressBar{
+	qproperty-active: rgb(234, 210, 36);
+	qproperty-background: rgb(0, 0, 0, 0);
+	qproperty-circleHeight: 5;
+	qproperty-startAngle: 0;
+	qproperty-innerRadius: 48;
+	qProperty-inner: rgb(0, 0, 0, 0);
+	qproperty-fontSize: 36;
+	qproperty-fontFamily: "冬青黑體簡體中文";
+}
+
+ServerEthWidget QPushButton{
+	font-size: 12px;
+	max-width: 40px;
+	color: white;
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+			stop: 0 rgb(145, 187, 215), stop: 1 rgb(19, 107, 163));
+	min-width: 70px;
+	min-height: 18px;
+}
+
+ServerEthWidget QPushButton:pressed{
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+			stop: 0 rgb(14, 46, 93), stop: 1 rgb(52, 145, 209));
+}
+
